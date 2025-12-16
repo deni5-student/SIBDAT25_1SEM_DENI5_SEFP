@@ -1,0 +1,45 @@
+﻿<Page x:Class="WpfApp1_SEFP_program_test2.Side_Admin_Dashboard"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1_SEFP_program_test2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Side_Admin_Dashboard">
+
+    <Grid>
+        <Label Content="Admin" HorizontalAlignment="Left" Margin="77,32,0,0" VerticalAlignment="Top"/>
+        <Label Content="Silkeborg Easy Football Planner" HorizontalAlignment="Center" Margin="0,45,0,0" VerticalAlignment="Top"/>
+        <Button Content="Log ud" HorizontalAlignment="Left" Margin="10,320,0,0" VerticalAlignment="Top" Width="138" Click="Log_ud_Klik"/>
+        <Button Content="Slet aktivitet" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" Width="138" Click="Slet_Aktivitet_Klik"/>
+        <Button Content="⚽ Opret aktivitet" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="138" Click="Opret_Aktivitet_Klik"/>
+        <ListBox x:Name="Aktivitet_ListBox"
+         SelectionChanged="Aktivitet_ListBox_SelectionChanged"
+         Margin="168,108,217,187">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding VisningMedStatus}">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Foreground" Value="Black"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding ErGennemfoert}" Value="True">
+                                            <Setter Property="Foreground" Value="Green"/>
+                                            <Setter Property="FontWeight" Value="Bold"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <ListBox x:Name="Aktivitet_Deltager_ListBox" DisplayMemberPath="Visning" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="168,282,217,45"/>
+            <ListBox x:Name="Medlem_ListBox" DisplayMemberPath="Visning" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="597,108,43,45"/>
+        <Button Content="Slet medlem" HorizontalAlignment="Left" Margin="10,243,0,0" VerticalAlignment="Top" Width="138" Click="Slet_medlem_Klik"/>
+            <Label Content="Aktiviteter" HorizontalAlignment="Left" Margin="168,82,0,0" VerticalAlignment="Top" Width="133"/>
+            <Label Content="Deltagere" HorizontalAlignment="Left" Margin="423,82,0,0" VerticalAlignment="Top"/>
+            <Label Content="Medlemmer" HorizontalAlignment="Left" Margin="597,82,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>

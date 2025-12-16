@@ -9,16 +9,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SIBDAT25_1SEM_DENI5_SEFP
+namespace WpfApp1_SEFP_program_test2
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();          // Initialiserer komponenterne i MainWindow
+            MainFrame.Navigate(new Side_Login()); // Start siden går til login siden
         }
     }
 }
