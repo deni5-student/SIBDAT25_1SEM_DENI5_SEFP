@@ -1,0 +1,9 @@
+﻿<Application x:Class="SIBDAT25_1SEM_DENI5_SEFP.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SIBDAT25_1SEM_DENI5_SEFP"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
