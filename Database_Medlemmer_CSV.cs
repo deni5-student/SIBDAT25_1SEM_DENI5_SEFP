@@ -9,7 +9,7 @@ namespace WpfApp1_SEFP_program_test2
 {
     internal static class Database_Medlemmer_CSV // intern statisk klasse til database af medlemmer i csv fil
     {
-        private static readonly string FilSti = "medlemmer.csv"; // medlemmer.csv får navnet 'FilSti' som string
+        private static readonly string FilSti = "medlemmer.csv"; // medlemmer.csv får navnet 'FilSti' som string #
         public static List<Klasse_Medlem> HentAllefraCSV() // Henter alle medlemmer fra CSV
         {
             
