@@ -1,4 +1,6 @@
 aktiviteter.csv og medlemmer.csv uploaded til projekt mappe - indeholder demo medlemmer og aktiviteter til brug ved demo
-gem dem under (eller overskriv) ...\SIBDAT25_1SEM_DENI5_SEFP\bin\Debug\net9.0-windows\ så kommer data indhold med i programmet 
+gem dem under (eller overskriv) ...\SIBDAT25_1SEM_DENI5_SEFP\bin\Debug\net9.0-windows\ så kommer data indhold med i programmet
+eller kør programmet en enkelt gang, også kopier aktiviteter.csv og medlemmer.csv til \SIBDAT25_1SEM_DENI5_SEFP\bin\Debug\net9.0-windows\
+
 admin brugerid: 1
 admin password: 1
